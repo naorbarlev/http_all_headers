@@ -1,4 +1,3 @@
-Http_all_headrs
-=================================
+# Http_all_headrs
 
-TODO: tell people what your package does!
+Extends the http.log by adding all headrs that apeers in http_all_log event.
