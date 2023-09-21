@@ -1,14 +1,14 @@
 [package]
 script_dir = scripts
 test_command = cd testing && btest -c btest.cfg
-summary = TODO: A summary of Http_all_headrs in one line
-description = TODO: A more detailed description of Http_all_headrs.
-	It can span multiple lines, with this indentation.
+summary = Extends the http.log by adding all headrs that apeers in http_all_log event.
+description = Extends the http.log by adding all headrs that appears 
+	in some pcaps that were tested on.
 depends = 
 	zeek >=4.0.0
 
 [template]
-source = https://github.com/zeek/package-template
+source = https://github.com/naorbarlev/http_all_headrs
 version = v3.0.1
 zkg_version = 2.14.0
 
