@@ -1,7 +1,5 @@
 module Http_all_headrs;
 
-#module http_all_headrs;
-
 # redef the Info record that will be logged out to http.log
 # &log must be and &optional/&defulat should also be
 
@@ -31,7 +29,7 @@ redef record HTTP::Info += {
 	dest_content_type: string &optional &log;
 	dest_connection: string &optional &log;
 	dest_www_authenticate: string &optional &log;
-	dest_etag: string &optional &log; #ETag
+	dest_etag: string &optional &log;
 	dest_vary: string &optional &log;
 	dest_accept_ranges: string &optional &log;
 	dest_content_length: string &optional &log;
@@ -43,12 +41,8 @@ event http_all_headers(c: connection, is_orig: bool, hlist: mime_header_list)
 	#if the packet is from orig
 	if ( is_orig )
 		{
-		#print "-------orig------------";
-
 		for ( key in hlist )
 			{
-			#print fmt("%s = %s ", hlist[key]$original_name, hlist[key]$value);
-
 			#checks every key and assign the exact value from the record
 			switch ( hlist[key]$original_name )
 				{
@@ -96,11 +90,8 @@ event http_all_headers(c: connection, is_orig: bool, hlist: mime_header_list)
 		}
 	else
 		{
-		#print "-------dest------------";
 		for ( key in hlist )
 			{
-			#print fmt("%s = %s ", hlist[key]$original_name, hlist[key]$value);
-
 			#checks every key and assign the exact value from the record
 			switch ( hlist[key]$original_name )
 				{
