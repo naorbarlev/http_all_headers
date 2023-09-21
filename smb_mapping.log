@@ -1,0 +1,11 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	smb_mapping
+#open	2023-09-21-09-12-57
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	path	service	native_file_system	share_type
+#types	time	string	addr	port	addr	port	string	string	string	string
+1064295605.220998	CIQd7W2NgSiZQZpdce	192.168.1.100	3019	192.168.1.102	139	\\\\NOHO\\IPC$	IPC	-	PIPE
+1064295605.225863	CIQd7W2NgSiZQZpdce	192.168.1.100	3019	192.168.1.102	139	\\\\NOHO\\IPC$	IPC	-	PIPE
+#close	2023-09-21-09-12-57

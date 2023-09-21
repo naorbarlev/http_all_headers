@@ -30,8 +30,6 @@ redef record HTTP::Info += {
 	dest_pragma: string &optional &log;
 	dest_content_type: string &optional &log;
 	dest_connection: string &optional &log;
-
-	###TODO in switch
 	dest_www_authenticate: string &optional &log;
 	dest_etag: string &optional &log; #ETag
 	dest_vary: string &optional &log;

@@ -1,0 +1,23 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	conn
+#open	2023-09-21-09-12-57
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	tunnel_parents
+#types	time	string	addr	port	addr	port	enum	string	interval	count	count	string	bool	bool	count	string	count	count	count	count	set[string]
+1064295605.217592	CIQd7W2NgSiZQZpdce	192.168.1.100	3019	192.168.1.102	139	tcp	ntlm,smb	0.009991	1769	1338	SF	T	T	0	ShDdFfA	17	2457	16	1986	-
+1064295605.217358	CMiX3l4okgzeUzDy5h	192.168.1.100	137	192.168.1.255	137	udp	dns	-	-	-	S0	T	T	0	D	1	78	0	0	-
+1064295605.217393	CpeiFE3hI4f76gAlm1	192.168.1.100	137	192.168.1.102	137	udp	dns	-	-	-	S0	T	T	0	D^	1	90	0	0	-
+1064295610.753003	CFfPAd3UyJqS8WBqdk	192.168.1.102	137	192.168.1.255	137	udp	dns	1.499276	150	0	S0	T	T	0	D	3	234	0	0	-
+1064295611.391901	CKGnHZ7Lu5ngoaDyl	192.168.1.102	4342	128.119.245.12	80	tcp	http	0.158188	568	445	S1	T	F	0	ShADad	4	736	3	573	-
+1064295607.981721	C2gsLd4qtjf9eNSOZ6	192.168.1.102	4340	192.168.1.104	161	udp	snmp	0.017386	50	51	SF	T	T	0	Dd	1	78	1	79	-
+1064295604.964007	C0mKAC47H7LSmOCMd2	192.168.1.102	4339	192.168.1.104	161	udp	snmp	0.017933	50	51	SF	T	T	0	Dd	1	78	1	79	-
+1064295598.930512	CQ9AlN1ocn2JLybc4l	192.168.1.102	4337	192.168.1.104	161	udp	snmp	0.017089	50	51	SF	T	T	0	Dd	1	78	1	79	-
+1064295610.999449	CFeRNB3TQnqcfnvv22	192.168.1.102	4341	192.168.1.104	161	udp	snmp	0.017313	50	51	SF	T	T	0	Dd	1	78	1	79	-
+1064295595.913764	CRwEvz2jWKgJKA0afk	192.168.1.102	4336	192.168.1.104	161	udp	snmp	0.017156	50	51	SF	T	T	0	Dd	1	78	1	79	-
+1064295614.017174	Cr9VPB1TFB6z6MqJQb	192.168.1.102	4343	192.168.1.104	161	udp	snmp	0.017485	50	51	SF	T	T	0	Dd	1	78	1	79	-
+1064295601.947256	CjFlNFR1QYtqNIh3a	192.168.1.102	4338	192.168.1.104	161	udp	snmp	0.017029	50	51	SF	T	T	0	Dd	1	78	1	79	-
+1064295595.382679	C65PuQ2Sms0zyMbBe5	192.168.1.102	4335	128.119.245.12	80	tcp	http	16.010776	517	1684	SF	T	F	0	ShADadfF	6	765	6	1932	-
+1064295592.896793	CIrDY42Ot6gXi3PEjb	192.168.1.102	4334	192.168.1.104	161	udp	snmp	0.016960	50	51	SF	T	T	0	Dd	1	78	1	79	-
+#close	2023-09-21-09-12-57
